@@ -10,15 +10,15 @@ https://hub.docker.com/repository/docker/rr724/cloudcomputingpa2/general\
 
 Instruction to use:
 1.	Create Spark cluster in AWS
-User can create an spark cluster by using EMR console provided by AWS. The following are the steps to create EMR cluster.
--	 Create Key-Pair for EMR cluster using navigation EC2-> Network & Security -> Key-pairs.
--	   Use .pem as format. This will download the .pem file. Keep it safe you as you will need it for login to EC2 instances.
--	Navigate to Amazon EMR console. Then, navigate to clusters-> create cluster.
--	General Configuration -> Cluster Name 
--	   Software Configuration-> EMR 5.33, do select 'Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.9.0' option menu.
--	   Hardware Configuration -> Make instance count as 4
--	   Security Access -> Provide .pem key created in above step.
--	   Rest of parameters can be left default.
+- User can create an spark cluster by using EMR console provided by AWS. The following are the steps to create EMR cluster.
+- Create Key-Pair for EMR cluster using navigation EC2-> Network & Security -> Key-pairs.
+- Use .pem as format. This will download the .pem file. Keep it safe you as you will need it for login to EC2 instances.
+- Navigate to Amazon EMR console. Then, navigate to clusters-> create cluster.
+- General Configuration -> Cluster Name 
+- Software Configuration-> EMR 5.33, do select 'Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.9.0' option menu.
+- Hardware Configuration -> Make instance count as 4
+  - Security Access -> Provide .pem key created in above step.
+  - Rest of parameters can be left default.
 -	Cluster status should be 'Waiting' on successful cluster creation.
 
 2.	Create s3 bucket for storing code and the data. Upload the code and date to the s3 bucket. The URL should look something like this:  s3://wine-data-rr724/
