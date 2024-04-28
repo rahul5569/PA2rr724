@@ -18,7 +18,7 @@ Instruction to use:
 - Software Configuration-> EMR 5.33, do select 'Spark: Spark 2.4.7 on Hadoop 2.10.1 YARN and Zeppelin 0.9.0' option menu.
 - Hardware Configuration -> Make instance count as 4
   - Security Access -> Provide .pem key created in above step.
-  - Rest of parameters can be left default.
+- Rest of parameters can be left default.
 -	Cluster status should be 'Waiting' on successful cluster creation.
 
 2.	Create s3 bucket for storing code and the data. Upload the code and date to the s3 bucket. The URL should look something like this:  s3://wine-data-rr724/
